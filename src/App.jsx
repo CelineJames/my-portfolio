@@ -22,7 +22,7 @@ export default function App() {
   return (
     <div className="min-h-screen w-full bg-primary text-black transition-colors duration-300 dark:bg-secondary dark:text-white">
       <Navbar />
-      <main className="pt-16">
+      <main className="">
         {/* Optional: prevent overlap with fixed Navbar */}
         <Routes>
           <Route path="/" element={<Home />} />

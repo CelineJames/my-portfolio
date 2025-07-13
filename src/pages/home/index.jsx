@@ -5,7 +5,7 @@ import Hero from "./hero";
 
 export default function Home() {
   return (
-    <div className="bg-primary dark:bg-secondary">
+    <div className="bg-primary dark:bg-secondary max-h-screen">
       <Hero />
       {/* <AboutMe />
             <Skills/>

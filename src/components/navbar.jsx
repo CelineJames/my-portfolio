@@ -45,11 +45,11 @@ export default function Navbar() {
           </div>
           {/* Desktop Nav */}
           <nav
-          data-aos="slide-left" 
+            data-aos="slide-left"
             className={`hidden md:flex items-center gap-6 font-bold  ${
               scrolled
                 ? "text-secondary dark:text-primary"
-                : "text-secondary dark:text-primary"
+                : "text-white dark:text-primary"
             }`}
           >
             <Link to="/about" className="hover:underline hover:decoration-red">
@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <button
               onClick={toggleTheme}
-              className="text-2xl transition-colors duration-300"
+              className="text-xl transition-colors duration-300"
               aria-label="Toggle theme"
             >
               {theme === "dark" ? "☀️" : "🌙"}
@@ -114,7 +114,7 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {menuOpen && (
           <div
-            className="md:hidden min-h-screen backdrop-blur-xl text-dark dark:text-white font-bold px-6 py-4 space-y-4 bg-cover bg-center flex flex-col justify-center items-center gap-10 text-3xl"
+            className="md:hidden h-screen backdrop-blur-xl text-dark dark:text-white font-bold px-6 py-4 space-y-4 bg-cover bg-center flex flex-col justify-center items-center gap-10 text-3xl"
             // style={{ backgroundImage: `url(${background})` }}
           >
             <Link

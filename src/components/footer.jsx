@@ -3,7 +3,7 @@ import { FiMail } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-primary dark:bg-darkblack dark:text-primary mt-4 p-3 flex justify-center items-center">
+    <footer className="bg-secondary text-primary dark:bg-darkblack dark:text-primary p-3 flex justify-center items-center">
       <div className="flex flex-col justify-center items-center gap-1 text-sm">
         {/* Contact Icons */}
         {/* <div className="flex items-center gap-4">

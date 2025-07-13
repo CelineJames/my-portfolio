@@ -80,7 +80,7 @@ export default function Hero() {
 
   return (
     <div>
-      <div className="relative flex h-screen bg-primary dark:bg-secondary overflow-hidden ">
+      <div className="relative flex h-[100vh] bg-primary dark:bg-secondary">
         {/* Left Section (Hero) with slant leaning into black section */}
 
         <section
