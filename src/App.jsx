@@ -1,22 +1,38 @@
+import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Home from "./pages/home";
 import NotFound from "./pages/not-found";
 import Navbar from "./components/navbar";
+import AboutMe from "./pages/about";
 import Footer from "./components/footer";
 import Projects from "./pages/projects";
 import ResumeViewer from "./pages/resume";
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
+
   return (
-    <div className="transition-colors duration-300 bg-primary text-black dark:bg-secondary dark:text-white min-h-screen w-full">
+    <div className="min-h-screen w-full bg-primary text-black transition-colors duration-300 dark:bg-secondary dark:text-white">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/resume" element={<ResumeViewer />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
+      <main className="pt-16">
+        {/* Optional: prevent overlap with fixed Navbar */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<ResumeViewer />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer /> 
     </div>
   );
 }
