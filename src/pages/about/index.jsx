@@ -21,7 +21,7 @@ export default function AboutMe() {
         </span>
       </div>
       {/* about me */}
-      <div className="max-w-[90%] md:max-w-[80%] mx-auto flex flex-col justify-center items-center  md:flex-row md:justify-between md:items-start gap-10">
+      <div className=" max-w-[90%] md:max-w-[80%] mx-auto flex flex-col justify-center items-center  md:flex-row md:justify-between md:items-start gap-10">
         <div data-aos="fade-up" className="md:w-1/2">
           <img
             src={avatar}
