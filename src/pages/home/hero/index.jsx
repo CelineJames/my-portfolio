@@ -162,7 +162,7 @@ export default function Hero() {
 
       {/* mobile view of the left section */}
       <section
-        data-aos="fade-up"
+        // data-aos="fade-up"
         className="md:hidden w-full h-[310px] absolute bottom-0 -z-1 pl-14 pt-10 pb-0
              flex flex-col items-start justify-center
              text-primary dark:text-black
