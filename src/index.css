@@ -5,6 +5,7 @@
 body {
   font-family: "Karla", sans-serif;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 h1,

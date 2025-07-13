@@ -12,6 +12,8 @@ module.exports = {
         xl: "1280px", // Desktops
         // 2xl: '1536px' // Optional: Ultra-wide monitors
       },
+      safelist: ["overflow-hidden"],
+
       colors: {
         primary: "#C4C4C4",
         secondary: "#111827",

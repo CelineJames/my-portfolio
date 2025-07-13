@@ -20,7 +20,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="w-full bg-primary text-black transition-colors duration-300 dark:bg-secondary dark:text-white">
+    <div className="w-full overflow-hidden bg-primary text-black transition-colors duration-300 dark:bg-secondary dark:text-white">
       <Navbar />
       <main className="">
         {/* Optional: prevent overlap with fixed Navbar */}
