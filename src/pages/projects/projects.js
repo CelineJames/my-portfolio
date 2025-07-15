@@ -10,7 +10,7 @@ export const projects = [
     Heading: "HerStories",
     text: "A Digital Archive for Women's history in Africa",
     details: "",
-    tools: ["NextJS", "Tailwind", "TypeScript"],
+    tools: ["NextJS", "Tailwind", "TypeScript", "Python"],
     github: "https://github.com/yourusername/tic-tac-toe",
     livesite: "https://yourusername.github.io/tic-tac-toe",
   },
