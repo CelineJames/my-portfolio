@@ -250,7 +250,7 @@ export default function Hero() {
               Hire Me
             </button>
           </a>
-          <Link to="/resume" target="_blank">
+          <Link to="/resume">
             <button className="w-full bg-red text-secondary px-6 py-1 rounded-3xl">
               Resume
             </button>
