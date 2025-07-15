@@ -43,7 +43,10 @@ export default function AboutMe() {
             data-aos="fade-up"
             className="w-20 h-[2px] bg-red inline-block mb-2 relative"
           >
-            <span className="w-3 h-3 rounded-full absolute -top-1 bg-red z-10"></span>
+            <span
+              data-aos="fade-up"
+              className="w-3 h-3 rounded-full absolute -top-1 bg-red z-10"
+            ></span>
           </span>
           <p data-aos="fade-up">
             My name is <strong>Itoro Celine James</strong>. I am a Software
