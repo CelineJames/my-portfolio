@@ -1,15 +1,17 @@
-// src/pages/Resume.tsx or app/resume/page.tsx (if using Next.js App Router)
-import React from "react";
-import resume from "@/assets/my-resume.png";
+import resume from "@/assets/resume.png";
 
 const ResumeViewer = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center gap-4">
-      <img src={resume} alt="" className="w-[70%] object-contain mt-20" />
+    <div className="min-h-screen flex flex-col items-center justify-center gap-6 px-4 py-10">
+      <img
+        src={resume}
+        alt="Resume preview"
+        className="max-h-[80vh] w-auto object-contain shadow-lg rounded"
+      />
       <a
         href="/Itoro-James.pdf"
         download
-        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+        className="px-5 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
       >
         Download Resume
       </a>

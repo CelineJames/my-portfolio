@@ -3,6 +3,7 @@ import linkedIn from "@/assets/linkedIn.svg";
 import github from "@/assets/github.svg";
 import twitter from "@/assets/twitter.svg";
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const words = ["Software Engineer", "Historian", "Technology Enthusiast"];
@@ -158,11 +159,11 @@ export default function Hero() {
             </button>
           </a>
 
-          <a href="/resume" target="_blank" rel="noopener noreferrer">
+          <Link to="/resume" target="_blank">
             <button className="w-full bg-red text-secondary px-6 py-1 rounded-3xl transition-all duration-500 transform hover:-translate-y-1">
               Resume
             </button>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -249,11 +250,11 @@ export default function Hero() {
               Hire Me
             </button>
           </a>
-          <a href="/resume" target="_blank" rel="noopener noreferrer">
+          <Link to="/resume" target="_blank">
             <button className="w-full bg-red text-secondary px-6 py-1 rounded-3xl">
               Resume
             </button>
-          </a>
+          </Link>
         </div>
       </section>
 

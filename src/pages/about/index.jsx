@@ -5,6 +5,7 @@ import twitter from "@/assets/twitter.svg";
 import instagram from "@/assets/instagram.svg";
 import facebook from "@/assets/facebook.svg";
 import { skills } from "./skills";
+import { Link } from "react-router-dom";
 
 export default function AboutMe() {
   return (
@@ -70,11 +71,11 @@ export default function AboutMe() {
                 Hire Me
               </button>
             </a>
-            <a href="/resume" target="_blank" rel="noopener noreferrer">
+            <Link to="/resume" target="_blank">
               <button className="w-full bg-red text-secondary px-8 py-2 rounded-3xl hover:-translate-y-1 duration-500 transition-all">
                 Resume
               </button>
-            </a>
+            </Link>
           </div>
           <div
             data-aos="fade-up"
@@ -171,8 +172,11 @@ export default function AboutMe() {
           data-aos="fade-up"
           className="flex -ml-4 -mr-4 flex-wrap justify-center pb-6 gap-4 md:gap-8"
         >
-          {skills.map((skil) => (
-            <div className="flex flex-col justify-center items-center p-6 bg-white gap-4 hover:bg-red group">
+          {skills.map((skil, idx) => (
+            <div
+              key={idx}
+              className="flex flex-col justify-center items-center p-6 bg-white gap-4 hover:bg-red group"
+            >
               <div className="">
                 <img
                   src={skil.icon}
