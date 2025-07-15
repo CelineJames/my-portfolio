@@ -104,7 +104,7 @@ export default function Hero() {
 
         <div className="flex justify-start items-center mt-4 gap-3">
           <a
-            href="#"
+            href="https://github.com/CelineJames"
             className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
             style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
           >
@@ -118,7 +118,7 @@ export default function Hero() {
             </div>
           </a>
           <a
-            href="#"
+            href="https://x.com/Khaytorah"
             className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
             style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
           >
@@ -133,7 +133,7 @@ export default function Hero() {
           </a>
 
           <a
-            href="#"
+            href="https://www.linkedin.com/in/itoro-celine-james/"
             className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
             style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
           >
@@ -198,7 +198,7 @@ export default function Hero() {
           className="flex flex-col fixed left-0 top-20 md:flex-row justify-start items-center mt-2 gap-3"
         >
           <a
-            href="#"
+            href="https://github.com/CelineJames"
             className="w-8 h-8 flex items-center justify-center rounded-full"
             style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
           >
@@ -211,22 +211,9 @@ export default function Hero() {
               <img src={github} alt="Twitter" className="" />
             </div>
           </a>
+
           <a
-            href="#"
-            className="w-8 h-8 flex items-center justify-center rounded-full"
-            style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
-          >
-            <div
-              className="w-[20px] h-[20px] flex items-center justify-center rounded-full"
-              style={{
-                background: "linear-gradient(0deg, #393a42, #0b0d14)",
-              }}
-            >
-              <img src={linkedIn} alt="Twitter" className="" />
-            </div>
-          </a>
-          <a
-            href="#"
+            href="https://x.com/Khaytorah"
             className="w-8 h-8 flex items-center justify-center rounded-full"
             style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
           >
@@ -237,6 +224,21 @@ export default function Hero() {
               }}
             >
               <img src={twitter} alt="Twitter" className="" />
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/itoro-celine-james/"
+            className="w-8 h-8 flex items-center justify-center rounded-full"
+            style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
+          >
+            <div
+              className="w-[20px] h-[20px] flex items-center justify-center rounded-full"
+              style={{
+                background: "linear-gradient(0deg, #393a42, #0b0d14)",
+              }}
+            >
+              <img src={linkedIn} alt="Twitter" className="" />
             </div>
           </a>
         </div>
