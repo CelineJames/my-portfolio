@@ -2,6 +2,8 @@ import avatar from "@/assets/workspace.JPG";
 import linkedIn from "@/assets/linkedIn.svg";
 import github from "@/assets/github.svg";
 import twitter from "@/assets/twitter.svg";
+import instagram from "@/assets/instagram.svg";
+import facebook from "@/assets/facebook.svg";
 import { skills } from "./skills";
 
 export default function AboutMe() {
@@ -40,32 +42,36 @@ export default function AboutMe() {
             data-aos="fade-up"
             className="w-20 h-[2px] bg-red inline-block mb-2 relative"
           >
-            <span className="w-3 h-3 rounded-full absolute -top-1 bg-red"></span>
+            <span className="w-3 h-3 rounded-full absolute -top-1 bg-red z-10"></span>
           </span>
           <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-            quisquam. Quo eos aliquid esse hic accusamus voluptatum, dicta
-            laborum excepturi repudiandae eius, dolore consectetur sit, incidunt
+            My name is <strong>Itoro Celine James</strong>. I am a Software
+            Engineer with a strong focus on Frontend Development.
             <br />
             <br />
-            beatae libero quia modi! Deserunt qui iure, nulla, facere minus
-            fugit dolor quo facilis animi, nostrum modi! Iste numquam, optio
+            I come from a background in History, but my curiosity and passion
+            for innovation and technology led me to the world of technology. I
+            believe that technology has the power to make life simpler, smarter,
+            and more impactful and that's what drew me in.
             <br />
             <br />
-            perspiciatis accusamus eum nostrum error natus velit vero, repellat
-            excepturi dolor cum? Alias inventore architecto reiciendis ut. Hic
+            Today, I channel that passion into building intuitive, user-centered
+            digital experiences. Whether it's crafting responsive interfaces or
+            solving real-world problems through code, I love using tech to make
+            things better and easier for people.
           </p>
+
           <div
             data-aos="fade-up"
             className="flex justify-start items-center gap-4 mt-8"
           >
-            <a href="">
-              <button className="w-full bg-transparent border border-red text-secondary dark:text-white px-8 py-2 rounded-3xl">
+            <a href="mailto:kaytorah55@gmail.com">
+              <button className="w-full bg-transparent border border-red text-secondary dark:text-white px-8 py-2 rounded-3xl hover:-translate-y-1 duration-500 transition-all">
                 Hire Me
               </button>
             </a>
             <a href="/resume" target="_blank" rel="noopener noreferrer">
-              <button className="w-full bg-red text-secondary px-8 py-2 rounded-3xl">
+              <button className="w-full bg-red text-secondary px-8 py-2 rounded-3xl hover:-translate-y-1 duration-500 transition-all">
                 Resume
               </button>
             </a>
@@ -75,8 +81,9 @@ export default function AboutMe() {
             className="flex justify-start items-center mt-4 gap-3"
           >
             <a
-              href="#"
-              className="w-9 h-9 flex items-center justify-center rounded-full"
+              href="https://github.com/CelineJames"
+              target="_blank"
+              className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
               style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
             >
               <div
@@ -89,8 +96,9 @@ export default function AboutMe() {
               </div>
             </a>
             <a
-              href="#"
-              className="w-9 h-9 flex items-center justify-center rounded-full"
+              href="https://x.com/Khaytorah"
+              target="_blank"
+              className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
               style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
             >
               <div
@@ -104,8 +112,9 @@ export default function AboutMe() {
             </a>
 
             <a
-              href="#"
-              className="w-9 h-9 flex items-center justify-center rounded-full"
+              href="https://www.linkedin.com/in/itoro-celine-james/"
+              target="_blank"
+              className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
               style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
             >
               <div
@@ -118,8 +127,9 @@ export default function AboutMe() {
               </div>
             </a>
             <a
-              href="#"
-              className="w-9 h-9 flex items-center justify-center rounded-full"
+              href="/about"
+              target="_blank"
+              className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
               style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
             >
               <div
@@ -128,12 +138,13 @@ export default function AboutMe() {
                   background: "linear-gradient(0deg, #393a42, #0b0d14)",
                 }}
               >
-                <img src={linkedIn} alt="Twitter" className="" />
+                <img src={instagram} alt="Twitter" className="" />
               </div>
             </a>
             <a
-              href="#"
-              className="w-9 h-9 flex items-center justify-center rounded-full"
+              href="/about"
+              target="_blank"
+              className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
               style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
             >
               <div
@@ -142,7 +153,7 @@ export default function AboutMe() {
                   background: "linear-gradient(0deg, #393a42, #0b0d14)",
                 }}
               >
-                <img src={linkedIn} alt="Twitter" className="" />
+                <img src={facebook} alt="Twitter" className="" />
               </div>
             </a>
           </div>
@@ -154,19 +165,19 @@ export default function AboutMe() {
           data-aos="fade-up"
           className="text-4xl font-sans font-semibold text-center mb-8 "
         >
-          Stack And Tools
+          Skills And Tools
         </h2>
         <div
           data-aos="fade-up"
           className="flex -ml-4 -mr-4 flex-wrap justify-center pb-6 gap-4 md:gap-8"
         >
           {skills.map((skil) => (
-            <div className="flex flex-col justify-center items-center p-6 bg-white gap-4 hover:bg-red">
+            <div className="flex flex-col justify-center items-center p-6 bg-white gap-4 hover:bg-red group">
               <div className="">
                 <img
                   src={skil.icon}
                   alt={skil.name}
-                  className="w-20 h-20 md:w-[100px] md:h-[100px] rounded-full"
+                  className="w-20 h-20 md:w-[100px] md:h-[100px] rounded-full transition-all duration-500 ease-in-out group-hover:rotate-[15deg] group-hover:translate-x-2 group-hover:translate-y-1"
                 />
               </div>
               <h5 className="font-sans text-lg font-semibold text-secondary">

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useTheme from "../hooks/useTheme";
 import { useEffect, useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
@@ -6,6 +6,9 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 export default function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const location = useLocation();
+  const isActivePage = (path) => location.pathname === path;
 
   // Prevent background scrolling when mobile menu is open
   useEffect(() => {
@@ -21,27 +24,51 @@ export default function Navbar() {
     <header className="fixed top-0 w-full z-50 transition-all duration-300 font-heading bg-transparent backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between text-primary dark:text-black">
         {/* Logo */}
-        <div className="text-2xl font-bold text-white md:hidden">CJ</div>
-        <div className="hidden md:block text-2xl font-bold text-dark dark:text-primary">
+        <a
+          href="/"
+          className="text-2xl font-bold text-white md:hidden hover:cursor-pointer"
+        >
           CJ
-        </div>
+        </a>
+        <a
+          href="/"
+          className="hidden md:block text-2xl font-bold text-dark dark:text-primary hover:cursor-pointer"
+        >
+          CJ
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 font-bold text-white dark:text-primary">
-          <Link to="/about" className="hover:underline hover:decoration-red">
+          <Link
+            to="/about"
+            className={`hover:text-red ${
+              isActivePage("/about")
+                ? "text-red border-b-2 border-secondary dark:border-white"
+                : ""
+            }`}
+          >
             About Me
           </Link>
-          <Link to="/projects" className="hover:underline hover:decoration-red">
+          <Link
+            to="/projects"
+            className={`hover:text-red ${
+              isActivePage("/projects")
+                ? "text-red border-b-2 border-secondary dark:border-white"
+                : ""
+            }`}
+          >
             Projects
           </Link>
-          <a
-            href="/resume"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline hover:decoration-red"
+          <Link
+            to="/contact"
+            className={`hover:text-red ${
+              isActivePage("/contact")
+                ? "text-red border-b-2 border-secondary dark:border-white"
+                : ""
+            }`}
           >
             Contact Me
-          </a>
+          </Link>
         </nav>
 
         {/* Theme Toggle & Hamburger */}
@@ -90,7 +117,7 @@ export default function Navbar() {
           <Link to="/projects" onClick={() => setMenuOpen(false)}>
             Projects
           </Link>
-          <Link to="/resume" onClick={() => setMenuOpen(false)}>
+          <Link to="/contact" onClick={() => setMenuOpen(false)}>
             Contact Me
           </Link>
         </div>

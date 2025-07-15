@@ -5,7 +5,7 @@ import twitter from "@/assets/twitter.svg";
 import { useState, useEffect, useRef } from "react";
 
 export default function Hero() {
-  const words = ["Frontend Developer", "Historian", "Technology Enthusiast"];
+  const words = ["Software Engineer", "Historian", "Technology Enthusiast"];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
@@ -105,7 +105,7 @@ export default function Hero() {
         <div className="flex justify-start items-center mt-4 gap-3">
           <a
             href="#"
-            className="w-9 h-9 flex items-center justify-center rounded-full"
+            className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
             style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
           >
             <div
@@ -119,7 +119,7 @@ export default function Hero() {
           </a>
           <a
             href="#"
-            className="w-9 h-9 flex items-center justify-center rounded-full"
+            className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
             style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
           >
             <div
@@ -134,7 +134,7 @@ export default function Hero() {
 
           <a
             href="#"
-            className="w-9 h-9 flex items-center justify-center rounded-full"
+            className="w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition-all"
             style={{ background: "linear-gradient(0deg, #0b0d14, #393a42)" }}
           >
             <div
@@ -149,11 +149,17 @@ export default function Hero() {
         </div>
 
         <div className="flex justify-between items-center gap-4 mt-8">
-          <button className="w-full bg-white text-secondary px-6 py-1 rounded-3xl">
-            Hire Me
-          </button>
+          <a href="mailto:kaytorah55@gmail.com" className="w-full">
+            <button className="relative w-full overflow-hidden px-6 py-1 rounded-3xl text-secondary bg-white transition-all duration-500 transform hover:-translate-y-1 group">
+              <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
+                Hire Me
+              </span>
+              <span className="absolute inset-0 bg-red transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 z-0" />
+            </button>
+          </a>
+
           <a href="/resume" target="_blank" rel="noopener noreferrer">
-            <button className="w-full bg-red text-secondary px-6 py-1 rounded-3xl">
+            <button className="w-full bg-red text-secondary px-6 py-1 rounded-3xl transition-all duration-500 transform hover:-translate-y-1">
               Resume
             </button>
           </a>
@@ -236,9 +242,11 @@ export default function Hero() {
         </div>
 
         <div className="flex justify-between items-center gap-4 mt-8">
-          <button className="w-full bg-white text-secondary px-6 py-1 rounded-3xl">
-            Hire Me
-          </button>
+          <a href="mailto:kaytorah55@gmail.com">
+            <button className="w-full bg-white text-secondary px-6 py-1 rounded-3xl">
+              Hire Me
+            </button>
+          </a>
           <a href="/resume" target="_blank" rel="noopener noreferrer">
             <button className="w-full bg-red text-secondary px-6 py-1 rounded-3xl">
               Resume

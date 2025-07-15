@@ -10,6 +10,7 @@ import AboutMe from "./pages/about";
 import Footer from "./components/footer";
 import Projects from "./pages/projects";
 import ResumeViewer from "./pages/resume";
+import ContactMe from "./pages/contact";
 
 export default function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/about" element={<AboutMe />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<ResumeViewer />} />
+          <Route path="/contact" element={<ContactMe />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
