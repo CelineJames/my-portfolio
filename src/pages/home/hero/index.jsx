@@ -244,7 +244,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="flex justify-between items-center gap-4 mt-8 mb-12">
+        <div className="flex justify-between items-center gap-4 mt-8 ">
           <Link to="/about">
             <button className="w-full bg-white text-secondary px-6 py-1 rounded-3xl">
               About Me
