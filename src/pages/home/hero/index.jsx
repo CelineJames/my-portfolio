@@ -85,7 +85,7 @@ export default function Hero() {
 
       <section
         data-aos="fade-right"
-        className="hidden flex-1 text-black md:flex flex-col items-start justify-center pl-12 xl:pl-28 pt-24 dark:text-primary -z-1"
+        className="hidden flex-1 text-black md:flex flex-col items-start justify-center pl-12 xl:pl-28 pt-24 dark:text-primary -z-1 overflow-hidden"
         style={{
           clipPath: "polygon(0 0, 100% 0%, 85% 100%, 0% 100%)",
         }}
@@ -170,7 +170,7 @@ export default function Hero() {
       {/* mobile view of the left section */}
       <section
         // data-aos="fade-up"
-        className="md:hidden w-full h-[310px] absolute bottom-0 -z-1 pl-14 pt-10 pb-0
+        className="md:hidden w-full h-[310px] absolute bottom-0 -z-1 pl-14 pt-10 pb-0 overflow-auto
              flex flex-col items-start justify-center
              text-primary dark:text-black
              bg-secondary dark:bg-primary
