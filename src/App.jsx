@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -14,27 +14,27 @@ import ContactMe from "./pages/contact";
 import WhatsAppButton from "./components/whatsapp-button";
 
 export default function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: false,
+  //   });
+  // }, []);
 
   return (
     <div className="w-full overflow-hidden bg-primary text-black transition-colors duration-300 dark:bg-secondary dark:text-white">
       <Navbar />
-      <main className="">
-        {/* Optional: prevent overlap with fixed Navbar */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<ResumeViewer />} />
-          <Route path="/contact" element={<ContactMe />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </main>
+      {/* <main className=""> */}
+      {/* Optional: prevent overlap with fixed Navbar */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<ResumeViewer />} />
+        <Route path="/contact" element={<ContactMe />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      {/* </main> */}
       <WhatsAppButton />
       {/* <Footer />  */}
     </div>
