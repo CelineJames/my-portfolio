@@ -270,7 +270,7 @@ export default function Hero() {
       </div>
 
       <div
-        className="flex md:hidden justify-center items-end w-full bg-primary dark:bg-secondary md:w-full"
+        className="flex md:hidden justify-center items-end w-full bg-primary dark:bg-secondary md:w-full overflow-hidden"
         style={{
           clipPath: "none",
         }}
