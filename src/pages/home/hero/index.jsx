@@ -80,7 +80,7 @@ export default function Hero() {
   }, [currentIndex, words.length]);
 
   return (
-    <div className="border border-red overflow-hidden relative flex flex-col-reverse md:flex-row md:justify-center items-center h-screen bg-primary dark:bg-secondary">
+    <div className="border border-red overflow-hidden relative flex flex-row md:justify-center items-center h-screen bg-primary dark:bg-secondary">
       {/* Left Section (Hero) with slant leaning into black section */}
 
       <section
@@ -170,7 +170,7 @@ export default function Hero() {
       {/* mobile view of the left section */}
       <section
         // data-aos="fade-up"
-        className="md:hidden w-full h-[310px] bottom-0 -z-1 pl-14 pt-10 pb-0
+        className="md:hidden w-full h-[310px] absolute bottom-0 -z-1 pl-14 pt-10 pb-0
              flex flex-col items-start justify-center
              text-primary dark:text-black
              bg-secondary dark:bg-primary
