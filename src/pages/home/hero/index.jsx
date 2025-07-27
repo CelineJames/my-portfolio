@@ -80,7 +80,7 @@ export default function Hero() {
   }, [currentIndex, words.length]);
 
   return (
-    <div className="relative md:flex bg-primary dark:bg-secondary">
+    <div className="border border-red mt-16 relative flex flex-col md:flex-row justify-center items-center h-screen bg-primary dark:bg-secondary">
       {/* Left Section (Hero) with slant leaning into black section */}
 
       <section
@@ -244,7 +244,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="flex justify-between items-center gap-4 mt-8">
+        <div className="flex justify-between items-center gap-4 mt-8 mb-12">
           <Link to="/about">
             <button className="w-full bg-white text-secondary px-6 py-1 rounded-3xl">
               About Me
@@ -261,7 +261,7 @@ export default function Hero() {
       {/* Right Section (Black) with opposite slant */}
       <div
         data-aos="fade-left"
-        className="hidden md:flex justify-center items-center flex-1 bg-gray-900 md:w-full"
+        className="hidden md:flex justify-center items-center flex-1 bg-gray-900"
         style={{
           clipPath: "polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%)",
         }}
@@ -270,7 +270,7 @@ export default function Hero() {
       </div>
 
       <div
-        className="flex md:hidden justify-center items-center w-full bg-primary dark:bg-secondary md:w-full"
+        className="flex md:hidden justify-center items-end w-full bg-primary dark:bg-secondary md:w-full"
         style={{
           clipPath: "none",
         }}
