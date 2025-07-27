@@ -80,7 +80,7 @@ export default function Hero() {
   }, [currentIndex, words.length]);
 
   return (
-    <div className="max-h-screen overflow-y-hidden relative flex flex-row md:justify-center items-center bg-primary dark:bg-secondary">
+    <div className="overflow-y-hidden relative flex flex-row md:justify-center items-center bg-primary dark:bg-secondary">
       {/* Left Section (Hero) with slant leaning into black section */}
 
       <section
@@ -168,7 +168,7 @@ export default function Hero() {
       </section>
 
       {/* mobile view of the left section */}
-      {/* <section
+      <section
         // data-aos="fade-up"
         className="md:hidden w-full absolute bottom-0 -z-1 pl-14 pt-24 pb-5
              flex flex-col items-start justify-center overflow-y-hidden
@@ -256,7 +256,7 @@ export default function Hero() {
             </button>
           </Link>
         </div>
-      </section> */}
+      </section>
 
       {/* Right Section (Black) with opposite slant */}
       <div
@@ -269,14 +269,14 @@ export default function Hero() {
         <img src={avatar} alt="an avatar" />
       </div>
 
-      {/* <div
+      <div
         className="flex md:hidden justify-center items-end w-full bg-primary dark:bg-secondary md:w-full overflow-y-hidden"
         style={{
           clipPath: "none",
         }}
       >
         <img src={avatar} alt="an avatar" />
-      </div> */}
+      </div>
     </div>
   );
 }
