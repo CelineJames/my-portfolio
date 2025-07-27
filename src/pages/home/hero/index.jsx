@@ -275,7 +275,7 @@ export default function Hero() {
           clipPath: "none",
         }}
       >
-        <img src={avatar} alt="an avatar" />
+        {/* <img src={avatar} alt="an avatar" /> */}
       </div>
     </div>
   );
