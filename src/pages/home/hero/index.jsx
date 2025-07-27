@@ -80,7 +80,7 @@ export default function Hero() {
   }, [currentIndex, words.length]);
 
   return (
-    <div className="max-h-screen overflow-y-hidden relative flex flex-row md:justify-center items-center h-screen bg-primary dark:bg-secondary">
+    <div className="overflow-y-hidden relative flex flex-row md:justify-center items-center bg-primary dark:bg-secondary">
       {/* Left Section (Hero) with slant leaning into black section */}
 
       <section
