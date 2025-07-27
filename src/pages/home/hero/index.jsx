@@ -269,14 +269,14 @@ export default function Hero() {
         <img src={avatar} alt="an avatar" />
       </div>
 
-      <div
+      {/* <div
         className="flex md:hidden justify-center items-end w-full bg-primary dark:bg-secondary md:w-full overflow-y-hidden"
         style={{
           clipPath: "none",
         }}
       >
-        {/* <img src={avatar} alt="an avatar" /> */}
-      </div>
+        <img src={avatar} alt="an avatar" />
+      </div> */}
     </div>
   );
 }
