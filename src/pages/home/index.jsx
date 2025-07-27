@@ -2,7 +2,7 @@ import Hero from "./hero";
 
 export default function Home() {
   return (
-    <div className="relative overflow-hidden max-h-screen bg-primary dark:bg-secondary">
+    <div className="relative overflow-y-hidden max-h-screen bg-primary dark:bg-secondary">
       <Hero />
     </div>
   );

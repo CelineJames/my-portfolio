@@ -80,7 +80,7 @@ export default function Hero() {
   }, [currentIndex, words.length]);
 
   return (
-    <div className="max-h-screen overflow-hidden relative flex flex-row md:justify-center items-center h-screen bg-primary dark:bg-secondary">
+    <div className="max-h-screen overflow-y-hidden relative flex flex-row md:justify-center items-center h-screen bg-primary dark:bg-secondary">
       {/* Left Section (Hero) with slant leaning into black section */}
 
       <section
@@ -171,7 +171,7 @@ export default function Hero() {
       <section
         // data-aos="fade-up"
         className="md:hidden w-full absolute bottom-0 -z-1 pl-14 pt-24 pb-5
-             flex flex-col items-start justify-center
+             flex flex-col items-start justify-center overflow-y-hidden
              text-primary dark:text-black
              bg-secondary dark:bg-primary
              backdrop-blur-md"
@@ -270,7 +270,7 @@ export default function Hero() {
       </div>
 
       <div
-        className="flex md:hidden justify-center items-end w-full bg-primary dark:bg-secondary md:w-full overflow-hidden"
+        className="flex md:hidden justify-center items-end w-full bg-primary dark:bg-secondary md:w-full overflow-y-hidden"
         style={{
           clipPath: "none",
         }}
