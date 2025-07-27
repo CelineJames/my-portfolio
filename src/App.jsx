@@ -14,12 +14,12 @@ import ContactMe from "./pages/contact";
 import WhatsAppButton from "./components/whatsapp-button";
 
 export default function App() {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //     once: false,
-  //   });
-  // }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
+  }, []);
 
   return (
     <div className="w-full overflow-hidden bg-primary text-black transition-colors duration-300 dark:bg-secondary dark:text-white">
