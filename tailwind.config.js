@@ -4,6 +4,9 @@ module.exports = {
   darkMode: "class", // ✅ uses user's system preference
   theme: {
     extend: {
+      animation: {
+        "bounce-slow": "bounce 1s infinite",
+      },
       screens: {
         xs: "360px", // Custom smallest screen
         sm: "640px", // Small tablets / large phones

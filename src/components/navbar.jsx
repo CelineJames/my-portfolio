@@ -110,14 +110,38 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden h-screen backdrop-blur-xl text-dark dark:text-white font-bold px-6 py-4 flex flex-col justify-center items-center gap-10 text-3xl">
-          <Link to="/about" onClick={() => setMenuOpen(false)}>
+        <div className="md:hidden h-screen backdrop-blur-lg  text-dark dark:text-white font-bold px-6 py-4 flex flex-col justify-center items-center gap-10 text-3xl">
+          <Link
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+            className={`${
+              isActivePage("/about")
+                ? "text-red border-b-2 border-secondary dark:border-white"
+                : ""
+            }`}
+          >
             About Me
           </Link>
-          <Link to="/projects" onClick={() => setMenuOpen(false)}>
+          <Link
+            to="/projects"
+            onClick={() => setMenuOpen(false)}
+            className={`${
+              isActivePage("/projects")
+                ? "text-red border-b-2 border-secondary dark:border-white"
+                : ""
+            }`}
+          >
             Projects
           </Link>
-          <Link to="/contact" onClick={() => setMenuOpen(false)}>
+          <Link
+            to="/contact"
+            onClick={() => setMenuOpen(false)}
+            className={`${
+              isActivePage("/contact")
+                ? "text-red border-b-2 border-secondary dark:border-white"
+                : ""
+            }`}
+          >
             Contact Me
           </Link>
         </div>

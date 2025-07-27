@@ -11,6 +11,7 @@ import Footer from "./components/footer";
 import Projects from "./pages/projects";
 import ResumeViewer from "./pages/resume";
 import ContactMe from "./pages/contact";
+import WhatsAppButton from "./components/whatsapp-button";
 
 export default function App() {
   useEffect(() => {
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <WhatsAppButton />
       {/* <Footer />  */}
     </div>
   );

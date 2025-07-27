@@ -1,5 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { useEffect, useState } from "react";
+import { FiPhone, FiMail } from "react-icons/fi";
 
 export default function ContactMe() {
   const [state, handleSubmit, reset] = useForm("xldlegpy");
@@ -46,6 +47,16 @@ export default function ContactMe() {
         <p className="mt-6">
           I’m always open to collaborations. Feel free to reach out!
         </p>
+        <div className="flex justify-center items-center gap-4 underline">
+          <div className="flex items-center gap-1">
+            <FiPhone />
+            <a href="tel:+2348068525317">Call me</a>
+          </div>
+          <div className="flex items-center gap-1">
+            <FiMail />
+            <a href="mailto:kaytorah55@gmail.com">Send me a mail</a>
+          </div>
+        </div>
         <p className="mt-8">Please send a message.</p>
       </div>
 

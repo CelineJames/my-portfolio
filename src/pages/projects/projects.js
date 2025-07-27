@@ -3,6 +3,7 @@ import guardPay from "@/assets/guardpay.png";
 import weekend from "@/assets/weekend.png";
 import tictactoe from "@/assets/tic-tac-toe.png";
 import portfolio from "@/assets/portfolio.png";
+import finanza from "@/assets/finanza.png";
 
 export const projects = [
   {
@@ -31,6 +32,15 @@ export const projects = [
     tools: ["ReactJs", "Vite", "Tailwind"],
     github: "https://github.com/CelineJames/guardpay",
     livesite: "guardpay-phi.vercel.app",
+  },
+  {
+    image: finanza,
+    Heading: "Finanza",
+    text: "An Expense tracker and virtual wallet",
+    details: "",
+    tools: ["NextJs", "Typescript", "Tailwind"],
+    github: "https://github.com/yourusername/tic-tac-toe",
+    livesite: "https://yourusername.github.io/tic-tac-toe",
   },
   {
     image: portfolio,

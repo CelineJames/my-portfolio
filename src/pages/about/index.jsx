@@ -20,7 +20,7 @@ export default function AboutMe() {
             Home.
           </a>
           <span className="w-[2px] h-4 bg-secondary dark:bg-red"></span>
-          <a href="">About.</a>
+          <a href="/projects">Projects.</a>
         </span>
       </div>
       {/* about me */}
@@ -29,6 +29,7 @@ export default function AboutMe() {
           <img
             src={avatar}
             alt=""
+            loading="lazy"
             className="w-full max-w-[500px] object-cover rounded-lg"
           />
         </div>
@@ -43,10 +44,7 @@ export default function AboutMe() {
             data-aos="fade-up"
             className="w-20 h-[2px] bg-red inline-block mb-2 relative"
           >
-            <span
-              data-aos="fade-up"
-              className="w-3 h-3 rounded-full absolute -top-1 bg-red z-10"
-            ></span>
+            <span className="w-3 h-3 rounded-full absolute -top-1 bg-red z-10"></span>
           </span>
           <p data-aos="fade-up">
             My name is <strong>Itoro Celine James</strong>. I am a Software
@@ -69,11 +67,11 @@ export default function AboutMe() {
             data-aos="fade-up"
             className="flex justify-start items-center gap-4 mt-8"
           >
-            <a href="mailto:kaytorah55@gmail.com">
+            <Link to="/projects">
               <button className="w-full bg-transparent border border-red text-secondary dark:text-white px-8 py-2 rounded-3xl hover:-translate-y-1 duration-500 transition-all">
-                Hire Me
+                Projects
               </button>
-            </a>
+            </Link>
             <Link to="/resume" target="_blank">
               <button className="w-full bg-red text-secondary px-8 py-2 rounded-3xl hover:-translate-y-1 duration-500 transition-all">
                 Resume

@@ -80,7 +80,7 @@ export default function Hero() {
   }, [currentIndex, words.length]);
 
   return (
-    <div className="relative md:flex h-screen bg-primary dark:bg-secondary">
+    <div className="relative md:flex bg-primary dark:bg-secondary">
       {/* Left Section (Hero) with slant leaning into black section */}
 
       <section
@@ -150,16 +150,16 @@ export default function Hero() {
         </div>
 
         <div className="flex justify-between items-center gap-4 mt-8">
-          <a href="mailto:kaytorah55@gmail.com" className="w-full">
+          <Link to="/about" className="w-full">
             <button className="relative w-full overflow-hidden px-6 py-1 rounded-3xl text-secondary bg-white transition-all duration-500 transform hover:-translate-y-1 group">
               <span className="relative z-10 transition-colors duration-500 group-hover:text-white">
-                Hire Me
+                About Me
               </span>
               <span className="absolute inset-0 bg-red transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 z-0" />
             </button>
-          </a>
+          </Link>
 
-          <Link to="/resume" target="_blank">
+          <Link to="/Resume" target="_blank">
             <button className="w-full bg-red text-secondary px-6 py-1 rounded-3xl transition-all duration-500 transform hover:-translate-y-1">
               Resume
             </button>
@@ -196,7 +196,7 @@ export default function Hero() {
 
         <div
           data-aos="fade-right"
-          className="flex flex-col fixed left-0 top-20 md:flex-row justify-start items-center mt-2 gap-3"
+          className="flex flex-col fixed left-0 top-20 md:flex-row justify-start items-center mt-2 gap-3 pl-2"
         >
           <a
             href="https://github.com/CelineJames"
@@ -245,11 +245,11 @@ export default function Hero() {
         </div>
 
         <div className="flex justify-between items-center gap-4 mt-8">
-          <a href="mailto:kaytorah55@gmail.com">
+          <Link to="/about">
             <button className="w-full bg-white text-secondary px-6 py-1 rounded-3xl">
-              Hire Me
+              About Me
             </button>
-          </a>
+          </Link>
           <Link to="/resume">
             <button className="w-full bg-red text-secondary px-6 py-1 rounded-3xl">
               Resume
@@ -270,7 +270,7 @@ export default function Hero() {
       </div>
 
       <div
-        className="flex h-screen md:hidden justify-center items-center w-full bg-primary dark:bg-secondary md:w-full"
+        className="flex md:hidden justify-center items-center w-full bg-primary dark:bg-secondary md:w-full"
         style={{
           clipPath: "none",
         }}

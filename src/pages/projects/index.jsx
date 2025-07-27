@@ -1,5 +1,6 @@
 import { projects } from "./projects";
 import github from "@/assets/github.svg";
+import { HiArrowRight } from "react-icons/hi";
 
 export default function Projects() {
   return (
@@ -14,14 +15,14 @@ export default function Projects() {
             Home.
           </a>
           <span className="w-[2px] h-4 bg-secondary dark:bg-red"></span>
-          <a href="">Projects.</a>
+          <a href="/contact">Contact Me.</a>
         </span>
       </div>
       <div className="px-4 md:px-32 lg:px-2 lg:max-w-[80%] mx-auto">
         {projects.map((project, idx) => (
           <div key={idx} className="lg:flex justify-between items-start gap-20">
             <div data-aos="fade-up" className="mb-8 lg:w-1/2">
-              <img src={project.image} alt="" />
+              <img src={project.image} alt="" loading="lazy" />
             </div>
             <div data-aos="fade-up" className="lg:w-1/2">
               <h2 className="text-3xl lg:text-5xl font-sans font-semibold">
@@ -50,7 +51,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="text-sm px-2 py-1 bg-red font-sans font-semibold rounded-sm"
                 >
-                  See more
+                  Live Demo
                 </a>
                 <a
                   href="#"
@@ -73,6 +74,12 @@ export default function Projects() {
             </div>
           </div>
         ))}
+        <a href="/contact" className="block group mt-12">
+          <div className="flex justify-center items-center gap-3 mb-6">
+            <p className="text-3xl font-bold">Contact Me</p>
+            <HiArrowRight className="text-3xl transition-transform duration-300 group-hover:translate-x-2 group-hover:text-red" />
+          </div>
+        </a>
       </div>
     </>
   );
