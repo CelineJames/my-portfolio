@@ -194,3 +194,7 @@
       >
         <img src={avatar} alt="an avatar" />
       </div>
+
+       // style={{
+          //   clipPath: "polygon(0 0, 100% 120px, 100% 100%, 0% 100%)",
+          // }}
