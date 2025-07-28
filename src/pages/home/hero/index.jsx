@@ -168,7 +168,7 @@ export default function Hero() {
       </section>
 
       {/* mobile view of the left section */}
-      <section
+      {/* <section
         // data-aos="fade-up"
         className="md:hidden w-full absolute bottom-0 -z-1 pl-14 pt-24 pb-5
              flex flex-col items-start justify-center overflow-y-hidden
@@ -256,7 +256,7 @@ export default function Hero() {
             </button>
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* Right Section (Black) with opposite slant */}
       <div

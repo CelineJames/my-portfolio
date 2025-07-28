@@ -24,17 +24,17 @@ export default function App() {
   return (
     <div className="w-full overflow-hidden bg-primary text-black transition-colors duration-300 dark:bg-secondary dark:text-white">
       <Navbar />
-      {/* <main className=""> */}
-      {/* Optional: prevent overlap with fixed Navbar */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/resume" element={<ResumeViewer />} />
-        <Route path="/contact" element={<ContactMe />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      {/* </main> */}
+      <main className="">
+        {/* Optional: prevent overlap with fixed Navbar */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutMe />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<ResumeViewer />} />
+          <Route path="/contact" element={<ContactMe />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
       <WhatsAppButton />
       {/* <Footer />  */}
     </div>
