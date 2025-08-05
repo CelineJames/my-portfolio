@@ -31,7 +31,7 @@ export const projects = [
     details: "",
     tools: ["ReactJs", "Vite", "Tailwind"],
     github: "https://github.com/CelineJames/guardpay",
-    livesite: "guardpay-phi.vercel.app",
+    livesite: "https://guardpay-phi.vercel.app",
   },
   {
     image: finanza,
