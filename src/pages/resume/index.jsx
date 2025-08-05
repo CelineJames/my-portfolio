@@ -2,7 +2,7 @@ import resume from "@/assets/resume.png";
 
 const ResumeViewer = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-6 px-4 py-10">
+    <div className="flex h-[100dvh] flex-col items-center justify-center gap-6 px-4 py-10 mt-14">
       <img
         src={resume}
         alt="Resume preview"

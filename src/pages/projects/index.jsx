@@ -46,7 +46,7 @@ export default function Projects() {
               <p>{project.text}</p>
               <div className="flex justify-between items-center mt-3 gap-3">
                 <a
-                  href={project.github}
+                  href={project.livesite}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm px-2 py-1 bg-red font-sans font-semibold rounded-sm"
@@ -54,7 +54,7 @@ export default function Projects() {
                   Live Demo
                 </a>
                 <a
-                  href="#"
+                  href={project.github}
                   className="w-9 h-9 flex items-center justify-center rounded-full"
                   style={{
                     background: "linear-gradient(0deg, #0b0d14, #393a42)",
@@ -75,7 +75,7 @@ export default function Projects() {
           </div>
         ))}
         <a href="/contact" className="block group mt-12">
-          <div className="flex justify-center items-center gap-3 mb-6">
+          <div className="flex justify-center items-center gap-3 pb-6">
             <p className="text-3xl font-bold">Contact Me</p>
             <HiArrowRight className="text-3xl transition-transform duration-300 group-hover:translate-x-2 group-hover:text-red" />
           </div>

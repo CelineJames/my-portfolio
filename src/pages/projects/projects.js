@@ -39,8 +39,8 @@ export const projects = [
     text: "An Expense tracker and virtual wallet",
     details: "",
     tools: ["NextJs", "Typescript", "Tailwind"],
-    github: "https://github.com/yourusername/tic-tac-toe",
-    livesite: "https://yourusername.github.io/tic-tac-toe",
+    github: "https://github.com/NanleTech/money-cometh/tree/develop/frontend",
+    livesite: "/projects",
   },
   {
     image: portfolio,
@@ -48,8 +48,8 @@ export const projects = [
     text: "My personal portfolio built to showcase my skills and projects",
     details: "",
     tools: ["ReactJs", "Vite", "Tailwind"],
-    github: "https://github.com/yourusername/tic-tac-toe",
-    livesite: "https://yourusername.github.io/tic-tac-toe",
+    github: "https://github.com/CelineJames/my-portfolio",
+    livesite: "https://itoro-james.vercel.app",
   },
   {
     image: weekend,
@@ -57,7 +57,7 @@ export const projects = [
     text: "A Online school website for Tech skills",
     details: "",
     tools: ["ReactJs", "Vite", "Tailwind"],
-    github: "https://github.com/yourusername/tic-tac-toe",
-    livesite: "https://yourusername.github.io/tic-tac-toe",
+    github: "https://github.com/CelineJames/weekend-UX",
+    livesite: "https://weekend-ux-wi3z.vercel.app/",
   },
 ];

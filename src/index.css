@@ -2,8 +2,8 @@
 
 body {
   font-family: "Karla", sans-serif;
-  /* min-height: 100vh; */
-  /* overflow: hidden; */
+  background-color: transparent;
+  box-sizing: border-box;
 }
 
 h1,
@@ -33,13 +33,14 @@ h2 {
 
 html {
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .mobile-container {
-  /* md:hidden flex flex-col justify-between mt-10 bg-red p-1 h-[90vh] */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: calc(100vh - 20px);
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 16px;
   overflow-y: hidden !important;
 }

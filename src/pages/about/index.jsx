@@ -47,22 +47,34 @@ export default function AboutMe() {
             <span className="w-3 h-3 rounded-full absolute -top-1 bg-red z-10"></span>
           </span>
           <p data-aos="fade-up">
-            My name is <strong>Itoro Celine James</strong>. I am a Software
-            Engineer with a strong focus on Frontend Development.
+            {" "}
+            Welcome to my journey. I’m a passionate developer who transitioned
+            from a degree in History into the exciting world of technology. My
+            adventure began in 2023 when I realized that technology could
+            enhance how we preserve and share historical knowledge. What started
+            as curiosity quickly evolved into writing code, building
+            full-functioning websites, games, and impactful applications. <br />
+            <br /> During my internship, I’ve contributed to scaling digital
+            products and collaborated cross-functionally across teams. I take
+            pride in crafting intuitive, responsive user interfaces and solving
+            real-world problems through code. I’m also an eager learner,
+            constantly expanding my knowledge and it brings me genuine joy.{" "}
             <br />
+            <br /> One of my proudest projects is <strong>HerStories</strong> a
+            digital archive that preserves and celebrates the stories of African
+            women throughout history. It’s a perfect blend of my historical
+            background and software engineering skills. I specialize in frontend
+            development but I’m now expanding into backend systems, AI-powered
+            tools, and Python based solutions. <br />
+            <br /> I strongly believe that technology has the power to transform
+            every sector, making processes simpler, smarter, and more impactful.{" "}
             <br />
-            I come from a background in History, but my curiosity and passion
-            for innovation and technology led me to the world of technology. I
-            believe that technology has the power to make life simpler, smarter,
-            and more impactful and that's what drew me in.
-            <br />
-            <br />
-            Today, I channel that passion into building intuitive, user-centered
-            digital experiences. Whether it's crafting responsive interfaces or
-            solving real-world problems through code, I love using tech to make
-            things better and easier for people.
+            <br /> When I’m not coding, you’ll find me reading, playing tennis,
+            or brainstorming. If you’re looking for a passionate, creative, and
+            growth-minded individual who’s dedicated to both personal
+            development and contributing meaningfully to every team, I’m glad
+            you’re here.{" "}
           </p>
-
           <div
             data-aos="fade-up"
             className="flex justify-start items-center gap-4 mt-8"

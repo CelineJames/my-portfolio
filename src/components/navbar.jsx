@@ -110,7 +110,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden h-screen backdrop-blur-lg  text-dark dark:text-white font-bold px-6 py-4 flex flex-col justify-center items-center gap-10 text-3xl">
+        <div className="md:hidden h-[100dvh] backdrop-blur-lg  text-dark dark:text-white font-bold px-6 py-4 flex flex-col justify-center items-center gap-10 text-3xl">
           <Link
             to="/about"
             onClick={() => setMenuOpen(false)}

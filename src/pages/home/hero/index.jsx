@@ -81,7 +81,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="hidden h-screen overflow-y-hidden relative md:flex flex-row ustify-center items-center bg-primary dark:bg-secondary">
+      <div className="hidden h-[100dvh] overflow-y-hidden relative md:flex flex-row ustify-center items-center bg-primary dark:bg-secondary">
         {/* Left Section (Hero) with slant leaning into black section */}
 
         <section
@@ -171,7 +171,7 @@ export default function Hero() {
         {/* Right Section (Black) with opposite slant */}
         <div
           data-aos="fade-left"
-          className="h-screen md:flex justify-center items-center flex-1 bg-gray-900"
+          className="h-[100dvh] md:flex justify-center items-center flex-1 bg-gray-900"
           style={{
             clipPath: "polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%)",
           }}
@@ -181,30 +181,30 @@ export default function Hero() {
       </div>
 
       {/* mobile container */}
-      <div className="mobile-container">
+      <div className="mobile-container md:hidden h-[100dvh]">
         {/* up side on mobile */}
         <div
-          className="flex justify-center m-auto w-full bg-primary dark:bg-secondary overflow-y-hidden"
+          className="flex justify-center items-end w-full bg-primary dark:bg-secondary mt-4"
           style={{
             clipPath: "none",
           }}
         >
-          <img src={avatar} alt="an avatar" />
+          <img src={avatar} alt="an avatar" className="w-full object-contain" />
         </div>
 
         {/* mobile view of the down section */}
         <div
           // data-aos="fade-up"
-          className="w-full pl-14 pt-24
+          className="w-full pl-14 pt-24 pb-8
              flex flex-col items-start justify-center
              text-primary dark:text-black
              bg-secondary dark:bg-primary
-             backdrop-blur-md"
-          // style={{
-          //   clipPath: "polygon(0 0, 100% 120px, 100% 100%, 0% 100%)",
-          // }}
+             backdrop-blur-md overflow-y-hidden"
+          style={{
+            clipPath: "polygon(0 0, 100% 120px, 100% 100%, 0% 100%)",
+          }}
         >
-          <span className="block font-bold text-xl pb-2 font-heading">
+          <span className="block font-bold text-xl font-heading">
             {typedGreeting}
           </span>
           <h1 className="text-3xl font-bold font-heading">{typedName}</h1>
@@ -269,7 +269,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="flex justify-between items-center gap-4 mt-6 mb-2">
+          <div className="flex justify-between items-center gap-4 mt-6 pb-2">
             <Link to="/about">
               <button className="w-full bg-white text-secondary px-6 py-1 rounded-3xl">
                 About Me
