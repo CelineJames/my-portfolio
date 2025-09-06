@@ -4,7 +4,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 export default function Projects() {
   return (
-    <>
+    <div className="max-w-[1800px] mx-auto">
       <div
         data-aos="fade-down"
         className="flex flex-col justify-center items-center gap-2 pt-20 pb-32"
@@ -81,6 +81,6 @@ export default function Projects() {
           </div>
         </a>
       </div>
-    </>
+    </div>
   );
 }

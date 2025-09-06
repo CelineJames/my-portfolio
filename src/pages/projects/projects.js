@@ -1,6 +1,6 @@
 import herstories from "@/assets/herstories.png";
 import guardPay from "@/assets/guardpay.png";
-import weekend from "@/assets/weekend.png";
+import NanleTech from "@/assets/nanletech.png";
 import tictactoe from "@/assets/tic-tac-toe.png";
 import portfolio from "@/assets/portfolio.png";
 import finanza from "@/assets/finanza.png";
@@ -12,8 +12,8 @@ export const projects = [
     text: "A Digital Archive for Women's history in Africa",
     details: "",
     tools: ["NextJS", "Tailwind", "TypeScript", "Python", "FastAPI"],
-    github: "https://github.com/yourusername/tic-tac-toe",
-    livesite: "https://yourusername.github.io/tic-tac-toe",
+    github: "https://github.com/CelineJames/herstories",
+    livesite: "https://herstories-africa.vercel.app",
   },
   {
     image: tictactoe,
@@ -40,7 +40,16 @@ export const projects = [
     details: "",
     tools: ["NextJs", "Typescript", "Tailwind"],
     github: "https://github.com/NanleTech/money-cometh/tree/develop/frontend",
-    livesite: "/projects",
+    livesite: "https://moneycometh.com.ng/",
+  },
+  {
+    image: NanleTech,
+    Heading: "NanleTech Website",
+    text: "a dynamic technology solutions company that is focused on developing web and mobile.",
+    details: "",
+    tools: ["NextJs", "Mantime"],
+    github: "https://github.com/NanleTech/nanletech",
+    livesite: "https://nanletech.com/",
   },
   {
     image: portfolio,
@@ -50,14 +59,5 @@ export const projects = [
     tools: ["ReactJs", "Vite", "Tailwind"],
     github: "https://github.com/CelineJames/my-portfolio",
     livesite: "https://itoro-james.vercel.app",
-  },
-  {
-    image: weekend,
-    Heading: "Weekend Online School",
-    text: "A Online school website for Tech skills",
-    details: "",
-    tools: ["ReactJs", "Vite", "Tailwind"],
-    github: "https://github.com/CelineJames/weekend-UX",
-    livesite: "https://weekend-ux-wi3z.vercel.app/",
   },
 ];

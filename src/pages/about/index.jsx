@@ -1,4 +1,4 @@
-import avatar from "@/assets/workspace.JPG";
+import avatar from "@/assets/me.png";
 import linkedIn from "@/assets/linkedIn.svg";
 import github from "@/assets/github.svg";
 import twitter from "@/assets/twitter.svg";
@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export default function AboutMe() {
   return (
-    <div className="">
+    <div className="max-w-[1800px] mx-auto">
       <div
         data-aos="fade-down"
         className="flex flex-col justify-center items-center gap-2 pt-20 pb-16"

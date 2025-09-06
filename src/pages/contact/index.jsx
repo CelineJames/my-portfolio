@@ -19,7 +19,7 @@ export default function ContactMe() {
   }, [state.succeeded, reset]);
 
   return (
-    <div className="w-full min-h-[100dvh] bg-primary dark:bg-secondary text-black dark:text-white">
+    <div className="w-full max-w-[1800px] mx-auto min-h-[100dvh] bg-primary dark:bg-secondary text-black dark:text-white">
       {/* Header */}
       <div
         data-aos="fade-down"
