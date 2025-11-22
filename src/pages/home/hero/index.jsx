@@ -6,7 +6,11 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
-  const words = ["Software Engineer", "Historian", "Technology Enthusiast"];
+  const words = [
+    "Software Developer",
+    "History Enthusiast",
+    "Technology Enthusiast",
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
 

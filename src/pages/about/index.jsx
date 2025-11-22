@@ -1,4 +1,4 @@
-import avatar from "@/assets/me.png";
+import avatar from "@/assets/Ity2.png";
 import linkedIn from "@/assets/linkedIn.svg";
 import github from "@/assets/github.svg";
 import twitter from "@/assets/twitter.svg";
@@ -61,11 +61,11 @@ export default function AboutMe() {
             constantly expanding my knowledge and it brings me genuine joy.{" "}
             <br />
             <br /> One of my proudest projects is <strong>HerStories</strong> a
-            digital archive that preserves and celebrates the stories of African
-            women throughout history. It’s a perfect blend of my historical
-            background and software engineering skills. I specialize in frontend
-            development but I’m now expanding into backend systems, AI-powered
-            tools, and Python based solutions. <br />
+            digital archive that aims to preserves and celebrates the stories of
+            African women throughout history. It’s a perfect blend of my
+            historical background and software development skills. I specialize
+            in frontend development but I’m now expanding into backend
+            development, and Python based solutions. <br />
             <br /> I strongly believe that technology has the power to transform
             every sector, making processes simpler, smarter, and more impactful.{" "}
             <br />
