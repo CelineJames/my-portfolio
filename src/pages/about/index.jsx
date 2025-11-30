@@ -84,7 +84,7 @@ export default function AboutMe() {
                 Projects
               </button>
             </Link>
-            <Link to="/resume" target="_blank">
+            <Link to="/resume">
               <button className="w-full bg-red text-secondary px-8 py-2 rounded-3xl hover:-translate-y-1 duration-500 transition-all">
                 Resume
               </button>

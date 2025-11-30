@@ -164,7 +164,7 @@ export default function Hero() {
               </button>
             </Link>
 
-            <Link to="/Resume" target="_blank">
+            <Link to="/Resume">
               <button className="w-full bg-red text-secondary px-6 py-1 rounded-3xl transition-all duration-500 transform hover:-translate-y-1">
                 Resume
               </button>
