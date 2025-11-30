@@ -2,11 +2,11 @@ import resume from "@/assets/resume.png";
 
 const ResumeViewer = () => {
   return (
-    <div className="flex h-[100dvh] flex-col items-center justify-center gap-6 px-4 py-10 mt-14">
+    <div className="flex h-[100dvh] flex-col items-center justify-center gap-6 px-4 py-10">
       <img
         src={resume}
         alt="Resume preview"
-        className="max-h-[80vh] w-auto object-contain shadow-lg rounded"
+        className="max-h-[80vh] w-auto object-contain shadow-lg rounded mt-14"
       />
       <a
         href="/Itoro-James.pdf"
