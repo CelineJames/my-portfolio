@@ -8,6 +8,7 @@ import git from "@/assets/git.webp";
 import typeScript from "@/assets/ts.webp";
 import french from "@/assets/french.png";
 import figma from "@/assets/figma.webp";
+import vue from "@/assets/vue.jpeg";
 
 export const skills = [
   {
@@ -17,6 +18,14 @@ export const skills = [
   {
     icon: react,
     name: "ReactJs",
+  },
+  {
+    icon: vue,
+    name: "VueJs",
+  },
+  {
+    icon: typeScript,
+    name: "Typescript",
   },
   {
     icon: sass,
@@ -33,10 +42,6 @@ export const skills = [
   {
     icon: git,
     name: "Git",
-  },
-  {
-    icon: typeScript,
-    name: "Typescript",
   },
   {
     icon: python,
