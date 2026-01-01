@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { FiPhone, FiMail } from "react-icons/fi";
 
 export default function ContactMe() {
-  const [state, handleSubmit, reset] = useForm("xldlegpy");
+  const [state, handleSubmit, reset] = useForm("xlgdgbrz");
   const [showSuccess, setShowSuccess] = useState(false);
 
   useEffect(() => {
@@ -54,7 +54,7 @@ export default function ContactMe() {
           </div>
           <div className="flex items-center gap-1">
             <FiMail />
-            <a href="mailto:kaytorah55@gmail.com">Send me a mail</a>
+            <a href="mailto:itoro.ujames@gmail.com">Send me a mail</a>
           </div>
         </div>
         <p className="mt-8">Please send a message.</p>
