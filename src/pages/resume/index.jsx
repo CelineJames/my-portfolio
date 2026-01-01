@@ -1,20 +1,13 @@
-import resume from "@/assets/resume.png";
+// import resume from "@/itoro_james.pdf";
 
 const ResumeViewer = () => {
   return (
-    <div className="flex h-[100dvh] flex-col items-center justify-center gap-6 px-4 py-10">
-      <img
-        src={resume}
-        alt="Resume preview"
-        className="max-h-[80vh] w-auto object-contain shadow-lg rounded mt-14"
+    <div className="h-[100dvh] w-full pt-14">
+      <iframe
+        src="/itoro_james.pdf"
+        className="h-full w-full rounded shadow-lg"
+        title="Resume"
       />
-      <a
-        href="/itoro_james.pdf"
-        download
-        className="px-5 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-      >
-        Download Resume
-      </a>
     </div>
   );
 };
