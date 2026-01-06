@@ -84,7 +84,20 @@ export default function AboutMe() {
                 Projects
               </button>
             </Link>
-            <Link to="/resume">
+            {/*Mobile: open PDF directly */}
+            <a
+              href="/itoro_james.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block md:hidden"
+            >
+              <button className="w-full bg-red text-secondary px-8 py-2 rounded-3xl hover:-translate-y-1 duration-500 transition-all">
+                Resume
+              </button>
+            </a>
+
+            {/* Desktop: go to embedded resume page */}
+            <Link to="/resume" className="hidden md:block">
               <button className="w-full bg-red text-secondary px-8 py-2 rounded-3xl hover:-translate-y-1 duration-500 transition-all">
                 Resume
               </button>
