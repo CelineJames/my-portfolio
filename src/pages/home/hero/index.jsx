@@ -290,7 +290,7 @@ export default function Hero() {
             </Link>
             {/*Mobile: open PDF directly */}
             <a
-              href="/itoro_james.pdf"
+              href="/Itoro_James_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="block md:hidden"
