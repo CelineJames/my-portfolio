@@ -7,7 +7,7 @@ const ResumeViewer = () => {
       <div className="hidden md:flex justify-center">
         <div className="w-[80%] max-w-5xl h-[85vh]">
           <iframe
-            src="/itoro_james.pdf"
+            src="/Itoro_James_Resume.pdf"
             className="w-full h-full border-0"
             title="Resume"
           />
